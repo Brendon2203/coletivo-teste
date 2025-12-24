@@ -78,3 +78,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach((counter) => counterObserver.observe(counter));
 });
+
+// Aguarda o documento carregar para não dar erro de "ID não encontrado"
+document.addEventListener('DOMContentLoaded', function() {
+    const placeholder = document.getElementById('video-placeholder');
+    
+    if (placeholder) {
+        placeholder.addEventListener('click', function() {
+            const videoId = '7fvJpHjNuHU';
+            
+            this.innerHTML = `
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            `;
+        });
+    }
+});

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - iTrois</title>
+
+    <link
+      rel="icon"
+      href="../img/favicon/cropped-favicon-150x150.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../img/favicon/cropped-favicon-230x230.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../img/favicon/cropped-favicon-230x230.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+    <custom-navbar>
+      <header class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+        <div
+          class="container mx-auto px-4 py-3 md:py-4 flex justify-between items-center"
+        >
+          <a href="../index.html" class="flex items-center scroll-smooth">
+            <img
+              src="../img/project/iTrois horizontal colorida.png"
+              alt="iTrois Logo"
+              class="h-8 md:h-10 max-w-[120px] md:max-w-none"
+            />
+          </a>
+
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#introducao"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600 transition-colors"
+              >INTRODUÇÃO</a
+            >
+            <a
+              href="#lgpd"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600 transition-colors"
+              >LGPD</a
+            >
+            <a
+              href="#dados"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600 transition-colors"
+              >QUAIS DADOS COLETAMOS</a
+            >
+            <a
+              href="#bases"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600 transition-colors"
+              >BASES LEGAIS</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600 transition-colors"
+              >FALE CONOSCO
+            </a>
+
+            <div class="relative">
+              <button
+                id="lang-toggle"
+                class="flex items-center px-3 py-1 rounded-full border border-gray-200"
+              >
+                <img
+                  id="current-flag"
+                  src="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                  class="w-5 h-3.5"
+                />
+                <i
+                  data-feather="chevron-down"
+                  class="w-4 h-4 ml-1 text-gray-600"
+                ></i>
+              </button>
+              <div
+                id="lang-menu"
+                class="hidden absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg"
+              >
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="pt"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                  data-name="Português"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>Português</span>
+                </div>
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="en"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+                  data-name="English"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>English</span>
+                </div>
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="fr"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                  data-name="Français"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>Français</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+          <button id="mobile-menu-button" class="md:hidden text-gray-800">
+            <i data-feather="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 p-6"
+        >
+          <div class="flex justify-between items-center mb-6">
+            <img
+              src="../img/project/iTrois horizontal colorida.png"
+              alt="Logo iTrois"
+              class="h-8"
+            />
+            <button id="close-menu" class="text-gray-800">
+              <i data-feather="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col space-y-4">
+            <a
+              href="#introducao"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600"
+              >INTRODUÇÃO</a
+            >
+            <a
+              href="#lgpd"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600"
+              >LGPD</a
+            >
+            <a
+              href="#dados"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600"
+              >QUAIS DADOS COLETAMOS</a
+            >
+            <a
+              href="#bases"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600"
+              >BASES LEGAIS</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-800 font-semibold hover:text-indigo-600"
+              >FALE CONOSCO</a
+            >
+
+            <div class="language-switcher mt-8">
+              <div
+                class="flex items-center justify-between px-3 py-2 rounded-lg border border-gray-200 cursor-pointer"
+              >
+                <div class="flex items-center">
+                  <img
+                    id="current-flag-mobile"
+                    src="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                    alt="Brazil Flag"
+                    class="w-5 h-3.5"
+                  />
+                  <span id="current-name-mobile" class="ml-2 text-gray-800"
+                    >Português</span
+                  >
+                </div>
+                <i
+                  data-feather="chevron-down"
+                  class="w-4 h-4 text-gray-600"
+                ></i>
+              </div>
+              <div
+                class="language-options hidden mt-2 bg-white rounded-md shadow-lg"
+              >
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="pt"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                  data-name="Português"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/br.svg"
+                    alt="Brazil Flag"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>Português</span>
+                </div>
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="en"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+                  data-name="English"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/gb.svg"
+                    alt="UK Flag"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>English</span>
+                </div>
+                <div
+                  class="option flex items-center px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                  data-lang="fr"
+                  data-flag="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                  data-name="Français"
+                >
+                  <img
+                    src="https://flagicons.lipis.dev/flags/4x3/fr.svg"
+                    alt="French Flag"
+                    class="w-5 h-3.5 mr-2"
+                  />
+                  <span>Français</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          feather.replace();
+
+          // Elementos do Menu Desktop
+          const langToggle = document.getElementById("lang-toggle");
+          const langMenu = document.getElementById("lang-menu");
+          const currentFlag = document.getElementById("current-flag");
+
+          // Elementos do Menu Mobile
+          const mobileMenu = document.getElementById("mobile-menu");
+          const mobileLangSwitcher = document.querySelector(
+            ".language-switcher > div"
+          );
+          const mobileLangOptions = document.querySelector(".language-options");
+          const currentFlagMobile = document.getElementById(
+            "current-flag-mobile"
+          );
+          const currentNameMobile = document.getElementById(
+            "current-name-mobile"
+          );
+
+          // Mapeamento de idiomas e caminhos
+          const targets = {
+            pt: "../Politica-de-Privacidade/index.html",
+            en: "../Politica-de-privacidade-US/index.html",
+            fr: "../Politica-de-privacidade-FR/index.html",
+          };
+
+          // --------------------------------------------------
+          // LÓGICA PRINCIPAL DE MUDANÇA DE IDIOMA E NAVEGAÇÃO
+          // --------------------------------------------------
+
+          const handleLanguageChange = (opt) => {
+            const lang = opt.getAttribute("data-lang");
+            const flagSrc = opt.getAttribute("data-flag");
+            const name = opt.getAttribute("data-name");
+
+            // 1. Atualiza o visual (para dar feedback rápido ao usuário)
+            // Desktop
+            currentFlag.src = flagSrc;
+            langMenu.classList.add("hidden"); // Fecha o menu desktop
+
+            // Mobile
+            currentFlagMobile.src = flagSrc;
+            currentNameMobile.textContent = name;
+            mobileLangOptions.classList.add("hidden"); // Fecha o menu mobile
+
+            // 2. Navega para a URL correta
+            const targetUrl = targets[lang];
+            if (targetUrl) {
+              window.location.replace(targetUrl); // Redireciona
+            }
+          };
+
+          // --------------------------------------------------
+          // EVENT LISTENERS
+          // --------------------------------------------------
+
+          // A. Mobile menu open/close
+          document
+            .getElementById("mobile-menu-button")
+            .addEventListener("click", () => {
+              mobileMenu.classList.remove("translate-x-full");
+            });
+          document
+            .getElementById("close-menu")
+            .addEventListener("click", () => {
+              mobileMenu.classList.add("translate-x-full");
+            });
+
+          // B. Desktop language menu toggle
+          langToggle.addEventListener("click", (e) => {
+            e.stopPropagation(); // Evita que o clique feche o menu imediatamente
+            langMenu.classList.toggle("hidden");
+          });
+
+          // C. Mobile language menu toggle
+          mobileLangSwitcher.addEventListener("click", () => {
+            mobileLangOptions.classList.toggle("hidden");
+          });
+
+          // D. Language option navigation (Unificado para Desktop e Mobile)
+          document.querySelectorAll(".option").forEach((opt) => {
+            opt.addEventListener("click", function () {
+              handleLanguageChange(this);
+            });
+          });
+
+          // E. Scroll suave
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              const target = document.querySelector(this.getAttribute("href"));
+              if (target) {
+                e.preventDefault();
+                window.scrollTo({
+                  top: target.offsetTop - 80,
+                  behavior: "smooth",
+                });
+                mobileMenu.classList.add("translate-x-full"); // Fecha o menu mobile
+              }
+            });
+          });
+
+          // F. Fechar menu desktop e mobile ao clicar fora
+          window.addEventListener("click", (e) => {
+            // Fecha menu desktop
+            if (
+              !langToggle.contains(e.target) &&
+              !langMenu.contains(e.target)
+            ) {
+              langMenu.classList.add("hidden");
+            }
+            // Não é necessário fechar o mobile language switcher aqui, pois ele está no mobile menu.
+          });
+        });
+      </script>
+    </custom-navbar>
+
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden p-6 md:p-8">
+        <div class="flex items-center mb-6">
+          <i data-feather="shield" class="text-indigo-600 mr-3"></i>
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900">
+            Política de Privacidade e Tratamento de Dados
+          </h1>
+        </div>
+
+        <div class="mb-8">
+          <p class="text-sm text-gray-500 mb-2">
+            Data da última atualização: 31 de outubro de 2025
+          </p>
+          <div class="flex items-center text-indigo-600">
+            <i data-feather="clock" class="mr-2 w-4"></i>
+            <span class="text-sm">Tempo estimado de leitura: 8 minutos</span>
+          </div>
+        </div>
+
+        <div class="prose max-w-none">
+          <section id="introducao" class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              1. Introdução e Compromisso
+            </h2>
+            <p>
+              Bem-vindo(a) à iTrois Tecnologia e Inovação ("iTrois", "nós",
+              "nosso"). A sua privacidade é a nossa prioridade. Esta Política de
+              Privacidade ("Política") foi criada para demonstrar nosso
+              compromisso com a proteção dos seus dados pessoais e para
+              explicar, de forma transparente, como coletamos, usamos,
+              armazenamos, compartilhamos e protegemos as informações dos
+              usuários ("Você") de nossos produtos e soluções, incluindo, mas
+              não se limitando a: Sommie, Barist.Ai, Feira Fácil e Farm Direct
+              (coletivamente, "Serviços").
+            </p>
+            <p>
+              Este documento foi elaborado em conformidade com a Lei Geral de
+              Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018) e outras
+              legislações aplicáveis. Ao utilizar nossos Serviços, você declara
+              que leu, entendeu e concorda com os termos desta Política.
+            </p>
+          </section>
+
+          <section id="lgpd" class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              2. Definições Chave (LGPD)
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">Dado Pessoal</h3>
+                <p class="text-sm">
+                  Qualquer informação relacionada a uma pessoa natural
+                  identificada ou identificável.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Dado Pessoal Sensível
+                </h3>
+                <p class="text-sm">
+                  Dado sobre origem racial ou étnica, convicção religiosa,
+                  opinião política, filiação a sindicato ou a organização de
+                  caráter religioso, filosófico ou político, dado referente à
+                  saúde ou à vida sexual, dado genético ou biométrico.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">Titular</h3>
+                <p class="text-sm">
+                  Você, a pessoa física a quem os dados pessoais se referem.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">Controlador</h3>
+                <p class="text-sm">
+                  A iTrois, a quem compete as decisões referentes ao tratamento
+                  de dados pessoais.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">Tratamento</h3>
+                <p class="text-sm">
+                  Toda operação realizada com dados pessoais, como coleta,
+                  produção, recepção, classificação, utilização, acesso,
+                  reprodução, transmissão, distribuição, processamento,
+                  arquivamento, armazenamento, eliminação, avaliação ou controle
+                  da informação, modificação, comunicação, transferência,
+                  difusão ou extração.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Encarregado de Dados (DPO)
+                </h3>
+                <p class="text-sm">
+                  Pessoa indicada pela iTrois para atuar como canal de
+                  comunicação entre o controlador, os titulares dos dados e a
+                  Autoridade Nacional de Proteção de Dados (ANPD).
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="dados" class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              3. Quais Dados Coletamos e Para Qual Finalidade?
+            </h2>
+            <p>
+              Coletamos apenas os dados estritamente necessários para oferecer,
+              manter e aprimorar nossos Serviços. A seguir, detalhamos os tipos
+              de dados e suas finalidades, considerando as particularidades de
+              cada aplicação:
+            </p>
+          </section>
+
+          <section class="max-w-6xl mx-auto px-4 py-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+              Tipos de Dados Coletados e Suas Finalidades
+            </h2>
+
+            <div class="overflow-x-auto shadow-lg rounded-2xl">
+              <table
+                class="min-w-full border border-gray-200 divide-y divide-gray-200"
+              >
+                <thead class="bg-blue-600 text-white">
+                  <tr>
+                    <th
+                      class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider"
+                    >
+                      Tipo de Dado
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider"
+                    >
+                      Exemplos
+                    </th>
+                    <th
+                      class="px-6 py-3 text-left text-sm font-semibold uppercase tracking-wider"
+                    >
+                      Finalidade Principal
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-100">
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-6 py-4 font-medium text-gray-800">
+                      Dados de Cadastro
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Nome completo, e-mail, número de telefone, senha
+                      criptografada, foto de perfil (opcional).
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Criar e gerenciar sua conta, autenticar seu acesso, enviar
+                      comunicações transacionais (ex: confirmação de cadastro,
+                      recuperação de senha) e garantir a segurança da sua conta.
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-6 py-4 font-medium text-gray-800">
+                      Dados de Uso e Dispositivo
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Endereço IP, tipo e versão do navegador/sistema
+                      operacional, identificador do dispositivo, logs de acesso,
+                      páginas e funcionalidades acessadas, tempo de permanência,
+                      dados de performance e falhas (crash reports).
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Monitorar o desempenho dos Serviços, identificar e
+                      corrigir bugs, realizar análises estatísticas para
+                      aprimorar a experiência do usuário, prevenir fraudes e
+                      garantir a segurança da plataforma.
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-6 py-4 font-medium text-gray-800">
+                      Dados de Transação e Pagamento
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Histórico de pedidos (Barist.Ai, Feira Fácil, Farm
+                      Direct), itens comprados, valores, data/hora da transação.
+                      (Não armazenamos dados completos de cartão de crédito; são
+                      processados por parceiros seguros).
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Processar pedidos e pagamentos, gerenciar entregas, emitir
+                      notas fiscais, realizar estornos e manter um histórico
+                      para seu controle e nosso suporte.
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-6 py-4 font-medium text-gray-800">
+                      Dados de Localização
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Endereço de entrega (Feira Fácil, Farm Direct),
+                      localização por GPS (com sua permissão) para
+                      funcionalidades específicas (ex: encontrar produtores
+                      próximos).
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Viabilizar a entrega de produtos, personalizar a
+                      experiência (ex: mostrar ofertas locais), otimizar a
+                      logística.
+                    </td>
+                  </tr>
+
+                  <tr class="hover:bg-gray-50 transition-colors">
+                    <td class="px-6 py-4 font-medium text-gray-800">
+                      Dados de Preferências e Conteúdo Gerado
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Preferências de produtos (ex: tipo de café no Barist.Ai,
+                      tipo de vinho no Sommie), listas de compras (Feira Fácil),
+                      avaliações de produtos ou vendedores, mensagens trocadas
+                      com suporte ou outros usuários na plataforma.
+                    </td>
+                    <td class="px-6 py-4 text-gray-600">
+                      Personalizar recomendações e a sua experiência nos
+                      Serviços, moderar conteúdo e oferecer suporte ao cliente.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="bases" class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              4. Bases Legais para o Tratamento de Dados
+            </h2>
+            <p>
+              Todo tratamento de dados realizado pela iTrois está fundamentado
+              em uma das bases legais previstas na LGPD:
+            </p>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Execução de Contrato (Art. 7º, V)
+                </h3>
+                <p class="text-sm">
+                  Utilizamos esta base para tratar os dados indispensáveis à
+                  prestação dos nossos Serviços, como os dados de cadastro e de
+                  transação.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Consentimento (Art. 7º, I)
+                </h3>
+                <p class="text-sm">
+                  Para o envio de comunicações de marketing, uso de cookies não
+                  essenciais e, principalmente, para o tratamento de dados
+                  pessoais sensíveis, solicitaremos seu consentimento livre,
+                  informado e inequívoco.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Legítimo Interesse (Art. 7º, IX)
+                </h3>
+                <p class="text-sm">
+                  Tratamos dados de uso e dispositivo para analisar e melhorar
+                  nossos Serviços, prevenir fraudes e personalizar sua
+                  experiência, sempre ponderando seus direitos e liberdades.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Cumprimento de Obrigação Legal ou Regulatória (Art. 7º, II)
+                </h3>
+                <p class="text-sm">
+                  Podemos tratar dados para cumprir obrigações legais, como a
+                  emissão de notas fiscais ou a resposta a ordens judiciais.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              5. Compartilhamento de Dados com Terceiros
+            </h2>
+            <p>
+              A iTrois não vende seus dados pessoais. O compartilhamento ocorre
+              apenas quando necessário para a operação dos nossos Serviços, com
+              parceiros que também possuem alto padrão de conformidade, tais
+              como:
+            </p>
+            <br />
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Provedores de Infraestrutura em Nuvem
+                </h3>
+                <p class="text-sm">
+                  Para hospedar nossos sistemas e armazenar dados com segurança
+                  (ex: Amazon Web Services, Google Cloud)
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Processadores de Pagamento
+                </h3>
+                <p class="text-sm">
+                  Para processar suas transações de forma segura (ex: Stripe,
+                  Pagar.me).
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Ferramentas de Análise e Performance
+                </h3>
+                <p class="text-sm">
+                  Para nos ajudar a entender o uso dos Serviços e melhorar a
+                  experiência (ex: Google Analytics).
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Parceiros de Logística
+                </h3>
+                <p class="text-sm">
+                  Para viabilizar a entrega de produtos adquiridos no Feira
+                  Fácil ou Farm Direct.
+                </p>
+              </div>
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Autoridades Públicas
+                </h3>
+                <p class="text-sm">
+                  Em caso de obrigação legal ou ordem judicial
+                </p>
+              </div>
+            </div>
+            <br />
+            <p>
+              Exigimos contratualmente que todos os nossos parceiros sigam as
+              normas de proteção de dados e utilizem as informações apenas para
+              as finalidades acordadas.
+            </p>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              6. Transferência Internacional de Dados
+            </h2>
+            <p>
+              Alguns de nossos parceiros (como provedores de nuvem) podem estar
+              localizados no exterior. Nesses casos, a iTrois garante que a
+              transferência internacional de dados seja realizada para países
+              que ofereçam um grau de proteção de dados adequado ou por meio de
+              cláusulas contratuais específicas que assegurem a conformidade com
+              a LGPD.
+            </p>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              7. Seus Direitos como Titular dos Dados
+            </h2>
+
+            <p class="mb-4">
+              A Lei Geral de Proteção de Dados (LGPD) garante a você uma série
+              de direitos sobre seus dados pessoais. A qualquer momento, você
+              pode solicitar:
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Confirmação da Existência de Tratamento
+                </h3>
+                <p class="text-sm">
+                  Você pode solicitar que a iTrois confirme se realiza ou não o
+                  tratamento dos seus dados pessoais.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Acesso aos Seus Dados
+                </h3>
+                <p class="text-sm">
+                  Solicite acesso aos dados pessoais que possuímos sobre você e
+                  saiba como eles estão sendo utilizados.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Correção de Dados
+                </h3>
+                <p class="text-sm">
+                  Peça a correção de dados incompletos, inexatos ou
+                  desatualizados para manter suas informações sempre corretas.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Anonimização, Bloqueio ou Eliminação
+                </h3>
+                <p class="text-sm">
+                  Solicite a anonimização, bloqueio ou eliminação de dados
+                  desnecessários, excessivos ou tratados em desconformidade com
+                  a LGPD.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Portabilidade dos Dados
+                </h3>
+                <p class="text-sm">
+                  Você pode solicitar a portabilidade dos seus dados pessoais a
+                  outro fornecedor de serviço ou produto, conforme
+                  regulamentação da ANPD.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Eliminação de Dados Pessoais
+                </h3>
+                <p class="text-sm">
+                  Peça a exclusão dos dados pessoais tratados com o seu
+                  consentimento, salvo quando houver necessidade legal de
+                  retenção.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Informações sobre Compartilhamento
+                </h3>
+                <p class="text-sm">
+                  Solicite informações sobre as entidades públicas ou privadas
+                  com as quais a iTrois realizou uso compartilhado de dados.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Recusa ou Revogação do Consentimento
+                </h3>
+                <p class="text-sm">
+                  Você tem o direito de ser informado sobre a possibilidade de
+                  não fornecer consentimento, bem como revogá-lo a qualquer
+                  momento e conhecer as consequências dessa decisão.
+                </p>
+              </div>
+            </div>
+
+            <br />
+
+            <p>
+              Para exercer qualquer um desses direitos, entre em contato com
+              nosso
+              <strong>Encarregado de Dados (DPO)</strong> através do e-mail
+              indicado na Seção 11.
+            </p>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              8. Segurança e Armazenamento dos Dados
+            </h2>
+
+            <p class="mb-4">
+              Seus dados são armazenados em ambiente seguro e controlado.
+              Adotamos as melhores práticas e medidas de segurança técnicas e
+              administrativas para proteger seus dados contra acessos não
+              autorizados, perda, alteração ou destruição.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">Criptografia</h3>
+                <p class="text-sm">
+                  Todos os dados sensíveis são protegidos por protocolos de
+                  criptografia modernos, garantindo confidencialidade e
+                  integridade das informações durante o trânsito e
+                  armazenamento.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Controle de Acesso
+                </h3>
+                <p class="text-sm">
+                  O acesso às informações é restrito a colaboradores e parceiros
+                  devidamente autorizados, conforme o princípio do mínimo
+                  privilégio.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Firewalls e Monitoramento
+                </h3>
+                <p class="text-sm">
+                  Nossos sistemas são protegidos por firewalls e monitorados
+                  continuamente para detectar e prevenir atividades suspeitas ou
+                  tentativas de acesso não autorizado.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Retenção de Dados
+                </h3>
+                <p class="text-sm">
+                  Reteremos seus dados pessoais apenas pelo tempo necessário
+                  para cumprir as finalidades para as quais foram coletados, ou
+                  conforme exigido por obrigações legais, contratuais ou
+                  requisições de autoridades competentes.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              9. Uso de Cookies
+            </h2>
+
+            <p class="mb-4">
+              Utilizamos cookies e tecnologias similares para melhorar sua
+              experiência de navegação, lembrando preferências e analisando o
+              desempenho dos nossos Serviços.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Cookies Essenciais
+                </h3>
+                <p class="text-sm">
+                  Necessários para o funcionamento básico do site, autenticação
+                  e segurança das sessões.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Cookies de Preferências
+                </h3>
+                <p class="text-sm">
+                  Permitem que o site memorize informações sobre suas escolhas,
+                  como idioma ou região, para oferecer uma experiência
+                  personalizada.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Cookies de Desempenho
+                </h3>
+                <p class="text-sm">
+                  Coletam informações sobre como os visitantes utilizam o site,
+                  ajudando a melhorar funcionalidades e performance.
+                </p>
+              </div>
+
+              <div class="bg-gray-50 p-4 rounded-lg">
+                <h3 class="font-medium text-indigo-600 mb-2">
+                  Cookies de Marketing
+                </h3>
+                <p class="text-sm">
+                  Utilizados para exibir anúncios relevantes e medir a eficácia
+                  de campanhas publicitárias. Você pode gerenciar ou desabilitar
+                  os cookies nas configurações do seu navegador, ciente de que
+                  isso pode afetar algumas funcionalidades.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              10. Alterações nesta Política de Privacidade
+            </h2>
+
+            <p class="mb-4">
+              Esta Política pode ser atualizada a qualquer momento para refletir
+              melhorias em nossos Serviços ou alterações na legislação. Quando
+              fizermos mudanças relevantes, você será notificado por e-mail ou
+              por meio de um aviso destacado em nossos aplicativos.
+            </p>
+
+            <div class="bg-gray-50 p-4 rounded-lg">
+              <h3 class="font-medium text-indigo-600 mb-2">
+                Data da Última Atualização
+              </h3>
+              <p class="text-sm">
+                A versão atual desta Política foi atualizada em
+                <strong>31 de outubro de 2025</strong>. Recomendamos que você
+                consulte esta página periodicamente para se manter informado
+                sobre como protegemos seus dados.
+              </p>
+            </div>
+          </section>
+
+          <!-- Additional sections would continue here with the same pattern -->
+
+          <section id="contact" class="mb-10">
+            <h2
+              class="text-xl font-semibold mb-4 text-indigo-700 border-b pb-2"
+            >
+              11. Fale Conosco - Encarregado de Dados (DPO)
+            </h2>
+            <div class="bg-indigo-50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <i data-feather="mail" class="text-indigo-600 mr-4 mt-1"></i>
+                <div>
+                  <h3 class="font-medium text-indigo-700 mb-2">
+                    Encarregado (DPO): Camilo
+                  </h3>
+                  <p class="mb-2">
+                    E-mail para contato:
+                    <a
+                      href="mailto:dpo@itrois.tech"
+                      class="text-indigo-600 hover:underline"
+                      >dpo@itrois.tech</a
+                    >
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    Agradecemos por confiar na iTrois. Estamos à disposição para
+                    esclarecer qualquer questão.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <custom-footer>
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-8 sm:py-10 md:py-12">
+        <div class="container mx-auto px-4">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0"
+          >
+            <div class="mb-4 md:mb-0 text-center md:text-left w-full md:w-auto">
+              <img
+                src="../img/project/horizontal-colorida-branca.png"
+                alt="iTrois Logo"
+                class="h-6 sm:h-8 mb-3 sm:mb-4 mx-auto md:mx-0"
+              />
+              <p
+                class="text-gray-400 max-w-md text-sm sm:text-base mx-auto md:mx-0"
+              >
+                Uma tecnologia a serviço do desenvolvimento sustentável. Uma
+                inovação que gera impacto.
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col items-center md:items-end w-full md:w-auto"
+            >
+              <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-4">
+                <a
+                  href="https://www.facebook.com/itrois.tecnologia"
+                  target="_blank"
+                  class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-600 transition-colors"
+                >
+                  <i class="fab fa-facebook-f text-sm sm:text-base"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/itrois.tech/"
+                  target="_blank"
+                  class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-pink-600 transition-colors"
+                >
+                  <i class="fab fa-instagram text-sm sm:text-base"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/itrois-tech/"
+                  target="_blank"
+                  class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-blue-500 transition-colors"
+                >
+                  <i class="fab fa-linkedin-in text-sm sm:text-base"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@itrois_tech"
+                  target="_blank"
+                  class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-red-600 transition-colors"
+                >
+                  <i class="fab fa-youtube text-sm sm:text-base"></i>
+                </a>
+              </div>
+
+              <p
+                class="text-gray-400 text-xs sm:text-sm text-center md:text-right mb-2"
+              >
+                © 2021 iTrois. Todos os direitos reservados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

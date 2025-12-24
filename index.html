@@ -18,19 +18,29 @@
 <body class="bg-gray-50">
     <custom-navbar></custom-navbar>
 
+    
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-amber-600 to-amber-800 text-white py-20 md:py-32">
+    <section id="hero" style="background-image: url('campanhas/tiro-medio-trabalhando-na-fabrica-de-cerveja.jpg');"
+        class="relative text-white py-20 md:py-32 bg-cover bg-center md:bg-top">
+
         <div class="container mx-auto px-6 text-center">
+            <img src="img/LOGO-COLETIVO-BEER-AMARELO-E-BRANCO-HORIZONTAL-SEM-FUNDO.png"
+                class="w-[300px] md:w-[500px] mx-auto mb-6" alt="Logo">
+
             <h1 class="text-4xl md:text-6xl font-bold mb-6">O futuro da cerveja artesanal é coletivo.</h1>
-            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Tecnologia, financiamento e comunidade para
-                fortalecer o mercado cervejeiro brasileiro.</p>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                Tecnologia, financiamento e comunidade para fortalecer o mercado cervejeiro brasileiro.
+            </p>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#crowdfunding"
-                    class="bg-white text-amber-800 px-8 py-3 rounded-full font-bold hover:bg-amber-100 transition">Ver
-                    campanhas de sucesso</a>
+                    class="bg-white text-amber-800 px-8 py-3 rounded-full font-bold hover:bg-amber-100 transition">
+                    Ver campanhas de sucesso
+                </a>
                 <a href="#about"
-                    class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-amber-800 transition">O
-                    que é o Coletivo Beer</a>
+                    class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-amber-800 transition">
+                    O que é o Coletivo Beer
+                </a>
             </div>
         </div>
     </section>
@@ -41,16 +51,32 @@
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold text-gray-800 mb-6">O que é o Coletivo Beer</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Somos uma startup brasileira que desenvolve soluções
-                        tecnológicas, financeiras e colaborativas para viabilizar a produção, comercialização e
-                        crescimento de pequenas e médias cervejarias artesanais.</p>
-                    <a href="#" class="inline-flex items-center text-amber-600 font-bold hover:text-amber-800">
-                        <i data-feather="play-circle" class="mr-2"></i> Assistir vídeo pitch
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Somos uma startup brasileira que desenvolve soluções tecnológicas, financeiras e colaborativas
+                        para viabilizar a produção, comercialização e crescimento de pequenas e médias cervejarias
+                        artesanais.
+                    </p>
+                    <a target="_blank" href="https://youtu.be/7fvJpHjNuHU"
+                        class="inline-flex items-center px-6 py-3 border-2 border-amber-600 text-amber-600 font-bold rounded-lg hover:bg-amber-600 hover:text-white transition-colors duration-300">
+                        <i data-feather="external-link" class="mr-2 w-5 h-5"></i> Ver no YouTube
                     </a>
                 </div>
-                <div class="md:w-1/2">
-                    <div class="bg-gray-200 rounded-xl aspect-video flex items-center justify-center">
-                        <i data-feather="play" class="w-16 h-16 text-amber-600"></i>
+
+                <div class="md:w-1/2 w-full">
+                    <div id="video-placeholder"
+                        class="relative shadow-2xl rounded-xl overflow-hidden bg-gray-900 aspect-video group cursor-pointer">
+
+                        <img src="campanhas/amigos-indianos-em-um-bar-rapazes-e-raparigas-no-bar-comemoracao-com-uma-caneca-de-cerveja.jpg"
+                            alt="Capa do Vídeo Coletivo Beer"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                        <div
+                            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+                            <div
+                                class="w-20 h-20 bg-amber-600 rounded-full flex items-center justify-center shadow-lg transform transition group-hover:scale-110">
+                                <i data-feather="play" class="w-10 h-10 text-white fill-current"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,80 +192,88 @@
     </section>
 
     <!-- Nossos Pilares -->
-    <section class="py-20 px-4 md:px-10 lg:px-20 bg-amber-50">
-    <div class="max-w-6xl mx-auto">
-        
-        <div class="text-center mb-20">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-amber-900 mb-4">Nosso Manifesto</h2>
-            <p class="text-xl text-amber-700 font-medium">Por que existimos e para onde vamos</p>
-            <div class="w-24 h-1.5 bg-amber-500 mx-auto mt-6"></div>
-        </div>
+    <section id="manifesto" class="py-20 px-4 md:px-10 lg:px-20 bg-amber-50">
+        <div class="max-w-6xl mx-auto">
 
-        <div class="bg-amber-800 text-white p-8 md:p-12 rounded-3xl shadow-2xl mb-12 text-center transform hover:scale-[1.01] transition-transform duration-300">
-            <span class="text-amber-400 font-bold uppercase tracking-widest text-sm">Nossa Missão</span>
-            <h3 class="text-2xl md:text-3xl font-light mt-4 leading-relaxed">
-                "Fortalecer o mercado cervejeiro artesanal por meio de soluções <span class="font-bold text-amber-300">tecnológicas, financeiras e colaborativas</span>."
-            </h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-500">
-                <h4 class="text-amber-800 font-bold text-xl mb-4 flex items-center">
-                    <i data-feather="eye" class="mr-2"></i> Visão
-                </h4>
-                <p class="text-gray-700 leading-relaxed">
-                    Ser a principal referência em crowdfunding e soluções financeiras para o mercado cervejeiro artesanal na América Latina.
-                </p>
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-amber-900 mb-4">Nosso Manifesto</h2>
+                <p class="text-xl text-amber-700 font-medium">Por que existimos e para onde vamos</p>
+                <div class="w-24 h-1.5 bg-amber-500 mx-auto mt-6"></div>
             </div>
-            <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-600">
-                <h4 class="text-amber-800 font-bold text-xl mb-4 flex items-center">
-                    <i data-feather="target" class="mr-2"></i> Propósito
-                </h4>
-                <p class="text-gray-700 leading-relaxed">
-                    Democratizar o acesso a capital, tecnologia e mercado para quem produz com paixão, impacto e identidade.
-                </p>
-            </div>
-        </div>
 
-        <div class="text-center mb-10">
-            <h3 class="text-2xl font-bold text-amber-900">Nossos Valores</h3>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <i data-feather="users" class="w-6 h-6"></i>
+            <div
+                class="bg-amber-800 text-white p-8 md:p-12 rounded-3xl shadow-2xl mb-12 text-center transform hover:scale-[1.01] transition-transform duration-300">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-sm">Nossa Missão</span>
+                <h3 class="text-2xl md:text-3xl font-light mt-4 leading-relaxed">
+                    "Fortalecer o mercado cervejeiro artesanal por meio de soluções <span
+                        class="font-bold text-amber-300">tecnológicas, financeiras e colaborativas</span>."
+                </h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-500">
+                    <h4 class="text-amber-800 font-bold text-xl mb-4 flex items-center">
+                        <i data-feather="eye" class="mr-2"></i> Visão
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ser a principal referência em crowdfunding e soluções financeiras para o mercado cervejeiro
+                        artesanal na América Latina.
+                    </p>
                 </div>
-                <h5 class="font-bold text-amber-900">Colaboratividade</h5>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-amber-600">
+                    <h4 class="text-amber-800 font-bold text-xl mb-4 flex items-center">
+                        <i data-feather="target" class="mr-2"></i> Propósito
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Democratizar o acesso a capital, tecnologia e mercado para quem produz com paixão, impacto e
+                        identidade.
+                    </p>
+                </div>
             </div>
 
-            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <i data-feather="zap" class="w-6 h-6"></i>
-                </div>
-                <h5 class="font-bold text-amber-900">Inovação</h5>
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-bold text-amber-900">Nossos Valores</h3>
             </div>
-
-            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <i data-feather="shield" class="w-6 h-6"></i>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="users" class="w-6 h-6"></i>
+                    </div>
+                    <h5 class="font-bold text-amber-900">Colaboratividade</h5>
                 </div>
-                <h5 class="font-bold text-amber-900">Transparência</h5>
-            </div>
 
-            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
-                <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
-                    <i data-feather="heart" class="w-6 h-6"></i>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h5 class="font-bold text-amber-900">Inovação</h5>
                 </div>
-                <h5 class="font-bold text-amber-900 leading-tight">Responsabilidade Social e Ambiental</h5>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="shield" class="w-6 h-6"></i>
+                    </div>
+                    <h5 class="font-bold text-amber-900">Transparência</h5>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center">
+                    <div
+                        class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h5 class="font-bold text-amber-900 leading-tight">Responsabilidade Social e Ambiental</h5>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- =========================
   SEÇÃO: TÍTULO DA TIMELINE
 ========================= -->
-    <section class="py-20 bg-white text-center">
+    <section id="roadmap" class="py-20 bg-white text-center">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl font-extrabold text-amber-900 mb-4">
                 Nossa Jornada
@@ -355,7 +389,7 @@
 
 
 
-    <section id="campanhas" class="py-16 px-4 md:px-10 lg:px-20 bg-white">
+    <section id="crowdfunding" class="py-16 px-4 md:px-10 lg:px-20 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-brown-700 mb-4">Coletivo Cervejeiro</h2>
@@ -370,13 +404,13 @@
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
                     <div class="relative">
-                        <img src="http://static.photos/food/640x360/11" alt="APA – American Pale Ale"
-                            class="w-full h-48 object-cover">
+                        <img src="campanhas/Capa-da-Campanha-da-American-Pale-Ale-Sao-Lourenco.webp"
+                            alt="APA – American Pale Ale" class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Financiada</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-brown-700 mb-2">APA – American Pale Ale | São Lourenço</h3>
+                        <h3 class="text-xl font-bold text-brown-700 mb-2">APA – American Pale Ale</h3>
                         <div class="flex items-center mb-2">
                             <i data-feather="package" class="text-amber-500 mr-2"></i>
                             <span class="text-sm">86 Garrafas</span>
@@ -412,7 +446,7 @@
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
                     <div class="relative">
-                        <img src="http://static.photos/food/640x360/12" alt="Cerveja A Colheita"
+                        <img src="campanhas/Capa-Campanha-A-Colheita-FINAL.webp" alt="Cerveja A Colheita"
                             class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Financiada</div>
@@ -454,7 +488,7 @@
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
                     <div class="relative">
-                        <img src="http://static.photos/food/640x360/13" alt="Cerveja A Montanha Mágica"
+                        <img src="campanhas/CAPA-CAMPANHA-A-MONTANHA-MAGICA.webp" alt="Cerveja A Montanha Mágica"
                             class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Financiada</div>
@@ -496,7 +530,7 @@
                 <div
                     class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
                     <div class="relative">
-                        <img src="http://static.photos/food/640x360/14" alt="Kairós Rendeira WitBier"
+                        <img src="campanhas/Cerveja-Rendeira-Capa-Campanha-1.webp" alt="Kairós Rendeira WitBier"
                             class="w-full h-48 object-cover">
                         <div class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Financiada</div>
@@ -536,7 +570,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="#"
+                <a href="#hero"
                     class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">
                     Quero lançar minha campanha!
                 </a>
@@ -624,7 +658,7 @@
 
 
 
-    <section class="py-20 px-4 md:px-8 bg-white">
+    <section id="beerpay" class="py-20 px-4 md:px-8 bg-white">
         <div class="container mx-auto">
 
             <div class="text-center mb-16">
@@ -718,7 +752,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-20 px-4 md:px-8 bg-white">
+    <section id="team" class="py-20 px-4 md:px-8 bg-white">
         <div class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-16 text-amber-800">Nossa Equipe</h2>
 
@@ -726,16 +760,12 @@
                 <h3 class="text-2xl font-semibold text-center mb-10 text-amber-700 uppercase tracking-widest">Fundadores
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                    <custom-team-card
-                        image="https://enzostvs-cached-generation.hf.space/generate/professional-tech-man-portrait?format=portrait-3_4"
-                        name="Gleison Cruz" role="CEO"
-                        description="Liderança estratégica e visão de mercado para a revolução do setor cervejeiro.">
+                    <custom-team-card image="team/pablo_oliveira.png" name="Pablo Oliveira" role="CEO"
+                        description="Fundador & Estrategista em inovação">
                     </custom-team-card>
 
-                    <custom-team-card
-                        image="https://enzostvs-cached-generation.hf.space/generate/professional-developer-man-portrait?format=portrait-3_4"
-                        name="Edimar Jr" role="CTO"
-                        description="Arquiteto de soluções tecnológicas focado em escala e inovação digital.">
+                    <custom-team-card image="team/pedro_ivo.png" name="Pedro Ivo Magalhães " role="co-Founder"
+                        description="Co-Fundador & Conselheiro Jurídico">
                     </custom-team-card>
                 </div>
             </div>
@@ -746,28 +776,22 @@
                 <h3 class="text-2xl font-semibold text-center mb-10 text-amber-700 uppercase tracking-widest">Conselho
                     Consultivo</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <custom-team-card
-                        image="https://enzostvs-cached-generation.hf.space/generate/professional-academic-woman-portrait?format=portrait-3_4"
-                        name="Dra. Ana Beatriz" role="Especialista em IA"
-                        description="Doutora em computação, orientando a inteligência por trás dos dados do BeerPay.">
+                    <custom-team-card image="team/raoni_moreno.png" name="Raoni Moreno" role="CCO"
+                        description="Responsável Comunicação">
                     </custom-team-card>
 
-                    <custom-team-card
-                        image="https://enzostvs-cached-generation.hf.space/generate/senior-business-man-portrait?format=portrait-3_4"
-                        name="Dr. Carlos Mendes" role="Estratégia de Negócios"
-                        description="Consultor sênior com vasta experiência em expansão de startups e governança.">
+                    <custom-team-card image="team/ana_magalhaes.png" name="Ana Magalhães" role="CHO"
+                        description="Recursos Humanos">
                     </custom-team-card>
 
-                    <custom-team-card
-                        image="https://enzostvs-cached-generation.hf.space/generate/expert-man-portrait-beer-industry?format=portrait-3_4"
-                        name="Sr. Rafael Costa" role="Mercado de Bebidas"
-                        description="Referência no setor artesanal, conectando a tecnologia às reais necessidades das cervejarias.">
+                    <custom-team-card image="team/daniel_mazoco.png" name="Daniel Mazoco" role="CSO"
+                        description="Comercial">
                     </custom-team-card>
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-20 px-4 md:px-8 bg-gray-50 overflow-hidden">
+    <section  id="partners" class="py-20 px-4 md:px-8 bg-gray-50 overflow-hidden">
         <div class="container mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-amber-800 mb-2">Parceiros do Ecossistema</h2>
@@ -790,45 +814,84 @@
                 <div class="flex w-[200%] gap-12 animate-scroll items-center">
                     <div class="flex justify-around w-1/2 gap-12">
                         <div class="group relative">
-                            <img src="https://via.placeholder.com/150x80?text=ITROIS" alt="ITROIS"
+                            <img src="parceiros/itrois_pb_p.webp" alt="ITROIS"
                                 class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
                             <span
                                 class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Parceiro
                                 de Software</span>
                         </div>
                         <div class="group relative">
-                            <img src="https://via.placeholder.com/150x80?text=GREEN+BANK" alt="Green Eco Bank"
+                            <img src="parceiros/greenecobank_pb_p.webp" alt="Green Eco Bank"
                                 class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
                             <span
                                 class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Soluções
                                 Financeiras</span>
                         </div>
                         <div class="group relative">
-                            <img src="https://via.placeholder.com/150x80?text=FAPES" alt="FAPES"
+                            <img src="parceiros/fapes_pb_p3.webp" alt="FAPES"
                                 class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
                             <span
                                 class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
                                 à Inovação</span>
                         </div>
                         <div class="group relative">
-                            <img src="https://via.placeholder.com/150x80?text=AREA9" alt="Area9"
+                            <img src="parceiros/Preta_100x43.webp" alt="fonte"
                                 class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
                             <span
                                 class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Infraestrutura</span>
                         </div>
+
+                        <div class="group relative">
+                            <img src="parceiros/FINEPE_pb_p.webp" alt="fonte"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
+                                e Pesquisa</span>
+                        </div>
                     </div>
                     <div class="flex justify-around w-1/2 gap-12">
-                        <img src="https://via.placeholder.com/150x80?text=ITROIS" class="h-12 grayscale">
-                        <img src="https://via.placeholder.com/150x80?text=GREEN+BANK" class="h-12 grayscale">
-                        <img src="https://via.placeholder.com/150x80?text=FAPES" class="h-12 grayscale">
-                        <img src="https://via.placeholder.com/150x80?text=AREA9" class="h-12 grayscale">
+                        <div class="group relative">
+                            <img src="parceiros/itrois_pb_p.webp" alt="ITROIS"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Parceiro
+                                de Software</span>
+                        </div>
+                        <div class="group relative">
+                            <img src="parceiros/greenecobank_pb_p.webp" alt="Green Eco Bank"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Soluções
+                                Financeiras</span>
+                        </div>
+                        <div class="group relative">
+                            <img src="parceiros/fapes_pb_p3.webp" alt="FAPES"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
+                                à Inovação</span>
+                        </div>
+                        <div class="group relative">
+                            <img src="parceiros/Preta_100x43.webp" alt="fonte"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Infraestrutura</span>
+                        </div>
+
+                        <div class="group relative">
+                            <img src="parceiros/FINEPE_pb_p.webp" alt="fonte"
+                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
+                            <span
+                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
+                                e Pesquisa</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-4 md:px-8 bg-white">
+    <section id="contact" class="py-20 px-4 md:px-8 bg-white">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-amber-800 mb-2">Fale com o Coletivo</h2>
@@ -892,12 +955,21 @@
                     <div>
                         <h4 class="text-xl font-bold text-amber-900 mb-4">Redes Sociais</h4>
                         <div class="flex gap-4">
-                            <a href="#" class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
-                                <span class="font-bold">LI</span> </a>
-                            <a href="#" class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
-                                <span class="font-bold">IG</span> </a>
-                            <a href="#" class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
-                                <span class="font-bold">YT</span> </a>
+                            <a href="https://www.linkedin.com/company/coletivobeer/" target="_blank"
+                                class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
+                                <i data-feather="linkedin" class="w-6 h-6 text-amber-600"></i> </a>
+                            <a href="https://www.instagram.com/coletivo.beer/ " target="_blank"
+                                class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
+                                <i data-feather="instagram" class="w-6 h-6 text-amber-600"></i> </a>
+                            <a href="https://www.youtube.com/@ColetivoBeer " target="_blank"
+                                class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
+                                <i data-feather="youtube" class="w-6 h-6 text-amber-600"></i> </a>
+                            <a href=" https://www.facebook.com/coletivo.beer " target="_blank"
+                                class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
+                                <i data-feather="facebook" class="w-6 h-6 text-amber-600"></i> </a>
+                            <a href="https://www.tiktok.com/@coletivobeer " target="_blank"
+                                class="p-3 bg-white rounded-full shadow-sm hover:text-amber-600 transition">
+                                <img src="campanhas/tiktok.png" style="width: 24px;" alt=""> </a>
                         </div>
                     </div>
                     <div class="border-t border-amber-200 pt-6 text-amber-800 italic">

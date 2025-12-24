@@ -4,11 +4,15 @@ class CustomTeamCard extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-  connectedCallback() {
-    const image = this.getAttribute('image') || 'https://via.placeholder.com/300x400?text=Team+Member';
-    const name = this.getAttribute('name') || 'Team Member';
-    const role = this.getAttribute('role') || 'Role';
-    const description = this.getAttribute('description') || 'Team member description goes here.';
+connectedCallback() {
+    const image = this.getAttribute('image') || '';
+    const name = this.getAttribute('name') || '';
+    const role = this.getAttribute('role') || '';
+    const description = this.getAttribute('description') || '';
+    
+    // O segredo está aqui: se você não definir nada, ele usa 'top' por padrão
+    // para priorizar a cabeça em fotos verticais.
+    const position = this.getAttribute('position') || 'top'; 
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -18,25 +22,20 @@ class CustomTeamCard extends HTMLElement {
           border-radius: 0.75rem;
           overflow: hidden;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-          transition: all 0.3s ease;
+          transition: transform 0.3s ease;
         }
+        .team-card:hover { transform: translateY(-5px); }
         .team-image {
           width: 100%;
-          height: 250px;
+          height: 550px;
           object-fit: cover;
+          object-position: center; 
+          background-color: #f9f9f9;
         }
-        .team-content { padding: 1.5rem; }
-        .team-name {
-          font-size: 1.25rem;
-          font-weight: 600;
-          color: #92400e;
-        }
-        .team-role {
-          color: #d97706;
-          font-weight: 500;
-          margin-bottom: 1rem;
-          display: block;
-        }
+        .team-content { padding: 1.5rem; text-align: center; }
+        .team-name { font-size: 1.25rem; font-weight: 600; color: #92400e; margin: 0; }
+        .team-role { color: #d97706; font-weight: 500; font-size: 0.9rem; margin-bottom: 0.5rem; display: block; }
+        p { font-size: 0.9rem; color: #4b5563; line-height: 1.4; margin: 0; }
       </style>
 
       <div class="team-card">

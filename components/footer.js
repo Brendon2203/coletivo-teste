@@ -30,6 +30,18 @@ class CustomFooter extends HTMLElement {
                     color: #9ca3af;
                     margin-bottom: 1.5rem;
                 }
+
+                  .logo {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .logo-img {
+                    width: 160px; /* Tamanho reduzido para não quebrar */
+                    height: auto;
+                    max-width: 100%;
+                }
+                
                 
                 .social-links {
                     display: flex;
@@ -85,7 +97,9 @@ class CustomFooter extends HTMLElement {
             
             <div class="footer-container">
                 <div>
-                    <a href="/" class="footer-logo">Coletivo Beer</a>
+                    <a href="/" class="logo">
+                    <img class="logo-img" src="img/LOGO-COLETIVO-BEER-AMARELO-E-BRANCO-RECUO-SEM-FUNDO.png" alt="Logo Coletivo Beer">
+                </a>
                     <p class="footer-description">Tecnologia, financiamento e comunidade para fortalecer o mercado cervejeiro brasileiro.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Instagram"><i data-feather="instagram"></i></a>
@@ -127,7 +141,7 @@ class CustomFooter extends HTMLElement {
             </div>
             
             <div class="footer-bottom">
-                <p>© ${new Date().getFullYear()} Coletivo Beer. Todos os direitos reservados. CNPJ: 00.000.000/0000-00</p>
+                <p>© ${new Date().getFullYear()} Coletivo Beer. Todos os direitos reservados. CNPJ: 46.930.910/0001-74</p>
             </div>
         `;
         
