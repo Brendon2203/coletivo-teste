@@ -126,16 +126,15 @@ class CustomFooter extends HTMLElement {
                         <a href="#team">Nosso Time</a>
                         <a href="#partners">Parceiros</a>
                         <a href="#contact">Contato</a>
-                        <a href="#">Política de Privacidade</a>
+                        <a href="Politica-de-Privacidade/index.html">Política de Privacidade</a>
                     </div>
                 </div>
                 
                 <div>
                     <h3 class="footer-heading">Contato</h3>
                     <div class="footer-links">
-                        <a href="mailto:contato@coletivobeer.com.br"><i data-feather="mail" class="mr-2"></i> contato@coletivobeer.com.br</a>
-                        <a href="tel:+5511999999999"><i data-feather="phone" class="mr-2"></i> (11) 99999-9999</a>
-                        <a href="#"><i data-feather="map-pin" class="mr-2"></i> Vila-Velha </a>
+                        <a href="mailto:contato@coletivobeer.com.br"><i data-feather="mail" class="mr-2"></i>contato@coletivobeer.com.br</a>
+                        <a><i data-feather="map-pin" class="mr-2"></i> Vila-Velha/ES </a>
                     </div>
                 </div>
             </div>

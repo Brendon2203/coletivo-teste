@@ -15,10 +15,10 @@
     <script src="script.js"></script>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 overflow-x-hidden">
     <custom-navbar></custom-navbar>
 
-    
+
     <!-- Hero Section -->
     <section id="hero" style="background-image: url('campanhas/tiro-medio-trabalhando-na-fabrica-de-cerveja.jpg');"
         class="relative text-white py-20 md:py-32 bg-cover bg-center md:bg-top">
@@ -161,28 +161,28 @@
 
                 <div class="text-center">
                     <div class="text-5xl font-bold mb-2">
-                        <span class="counter" data-target="50">0</span>
+                        <span class="counter" data-target="5">0</span>
                     </div>
                     <p class="text-xl">Campanhas financiadas</p>
                 </div>
 
                 <div class="text-center">
                     <div class="text-5xl font-bold mb-2">
-                        <span class="counter" data-target="2.5">0</span><span>M</span>
+                        <span class="counter" data-target="150">0</span><span>mil</span>
                     </div>
-                    <p class="text-xl">Milhões movimentados</p>
+                    <p class="text-xl">Valores movimentados</p>
                 </div>
 
                 <div class="text-center">
                     <div class="text-5xl font-bold mb-2">
-                        <span class="counter" data-target="120">0</span>
+                        <span class="counter" data-target="250">0</span><span>+</span>
                     </div>
-                    <p class="text-xl">Cervejarias apoiadas</p>
+                    <p class="text-xl">Clientes ativos</p>
                 </div>
 
                 <div class="text-center">
                     <div class="text-5xl font-bold mb-2">
-                        <span class="counter" data-target="15">0</span><span> mil+</span>
+                        <span class="counter" data-target="5">0</span><span> mil+</span>
                     </div>
                     <p class="text-xl">Consumidores impactados</p>
                 </div>
@@ -270,9 +270,6 @@
         </div>
     </section>
 
-    <!-- =========================
-  SEÇÃO: TÍTULO DA TIMELINE
-========================= -->
     <section id="roadmap" class="py-20 bg-white text-center">
         <div class="container mx-auto px-4">
             <h1 class="text-4xl md:text-5xl font-extrabold text-amber-900 mb-4">
@@ -284,22 +281,19 @@
         </div>
     </section>
 
-    <!-- =========================
-  SEÇÃO: TIMELINE
-========================= -->
     <section class="py-16 px-4 md:px-8 bg-amber-50">
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-6xl">
             <div class="relative">
 
-                <!-- Linha central da timeline (desktop) -->
-                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-amber-300 -translate-x-1/2"></div>
+                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-1 bg-amber-300 -translate-x-1/2"></div>
 
-                <!-- Lista de eventos -->
-                <div class="space-y-16">
+                <div class="space-y-12 md:space-y-16">
 
-                    <!-- ITEM TIMELINE (ESQUERDA) -->
-                    <div class="timeline-item relative flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                    <div class="timeline-item relative flex flex-col md:flex-row items-start md:items-center">
+                        <span
+                            class="absolute left-4 md:left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2 z-10"></span>
+
+                        <div class="w-full md:w-1/2 pl-10 md:pl-0 md:pr-12 text-left md:text-right">
                             <h3 class="text-2xl font-bold text-amber-800">2021–2022</h3>
                             <ul class="text-gray-700 mt-3 space-y-1">
                                 <li>Ideação</li>
@@ -307,86 +301,73 @@
                                 <li>Fundação da startup</li>
                             </ul>
                         </div>
-
-                        <!-- Ponto da timeline -->
-                        <span
-                            class="hidden md:block absolute left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2"></span>
-
-                        <div class="md:w-1/2 md:pl-12"></div>
+                        <div class="hidden md:block md:w-1/2"></div>
                     </div>
 
-                    <!-- ITEM TIMELINE (DIREITA) -->
-                    <div class="timeline-item relative flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12"></div>
-
+                    <div class="timeline-item relative flex flex-col md:flex-row items-start md:items-center">
                         <span
-                            class="hidden md:block absolute left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2"></span>
+                            class="absolute left-4 md:left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2 z-10"></span>
 
-                        <div class="md:w-1/2 md:pl-12">
+                        <div class="hidden md:block md:w-1/2"></div>
+                        <div class="w-full md:w-1/2 pl-10 md:pl-12 text-left">
                             <h3 class="text-2xl font-bold text-amber-800">2023</h3>
                             <ul class="text-gray-700 mt-3 space-y-1">
                                 <li>Captação FAPES</li>
-                                <li>Lançamento do MVP</li>
+                                <li>Validação do MVP</li>
                                 <li>Primeiras vendas</li>
-                                <li>Validação do modelo</li>
+                                <li>Incubação no Fonte.Hub</li>
+                                <li>Aceleração no Base27 / VENTIUR</li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- ITEM -->
-                    <div class="timeline-item relative flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                    <div class="timeline-item relative flex flex-col md:flex-row items-start md:items-center">
+                        <span
+                            class="absolute left-4 md:left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2 z-10"></span>
+
+                        <div class="w-full md:w-1/2 pl-10 md:pl-0 md:pr-12 text-left md:text-right">
                             <h3 class="text-2xl font-bold text-amber-800">2024–2025</h3>
                             <ul class="text-gray-700 mt-3 space-y-1">
                                 <li>Evolução do BeerPay</li>
-                                <li>White label</li>
+                                <li>Aceleração Programa Seedes / Neo Ventures</li>
                                 <li>Novas funcionalidades</li>
                             </ul>
                         </div>
-
-                        <span
-                            class="hidden md:block absolute left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2"></span>
-
-                        <div class="md:w-1/2 md:pl-12"></div>
+                        <div class="hidden md:block md:w-1/2"></div>
                     </div>
 
-                    <!-- ITEM -->
-                    <div class="timeline-item relative flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12"></div>
-
+                    <div class="timeline-item relative flex flex-col md:flex-row items-start md:items-center">
                         <span
-                            class="hidden md:block absolute left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2"></span>
+                            class="absolute left-4 md:left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2 z-10"></span>
 
-                        <div class="md:w-1/2 md:pl-12">
+                        <div class="hidden md:block md:w-1/2"></div>
+                        <div class="w-full md:w-1/2 pl-10 md:pl-12 text-left">
                             <h3 class="text-2xl font-bold text-amber-800">2026</h3>
                             <ul class="text-gray-700 mt-3 space-y-1">
                                 <li>Lançamento oficial BeerPay</li>
-                                <li>50 cervejarias ativas</li>
+                                <li>30 cervejarias ativas</li>
                             </ul>
                         </div>
                     </div>
 
-                    <!-- ITEM -->
-                    <div class="timeline-item relative flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                    <div class="timeline-item relative flex flex-col md:flex-row items-start md:items-center">
+                        <span
+                            class="absolute left-4 md:left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2 z-10"></span>
+
+                        <div class="w-full md:w-1/2 pl-10 md:pl-0 md:pr-12 text-left md:text-right">
                             <h3 class="text-2xl font-bold text-amber-800">2027</h3>
                             <ul class="text-gray-700 mt-3 space-y-1">
-                                <li>200 cervejarias</li>
-                                <li>Escala nacional</li>
+                                <li>100 cervejarias</li>
+                                <li>Internacionalização</li>
                             </ul>
                         </div>
-
-                        <span
-                            class="hidden md:block absolute left-1/2 w-6 h-6 bg-amber-600 border-4 border-amber-200 rounded-full -translate-x-1/2"></span>
-
-                        <div class="md:w-1/2 md:pl-12"></div>
+                        <div class="hidden md:block md:w-1/2"></div>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-
 
 
     <section id="crowdfunding" class="py-16 px-4 md:px-10 lg:px-20 bg-white">
@@ -570,7 +551,7 @@
             </div>
 
             <div class="text-center mt-12">
-                <a href="#hero"
+                <a href="#contact"
                     class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">
                     Quero lançar minha campanha!
                 </a>
@@ -661,8 +642,8 @@
     <section id="beerpay" class="py-20 px-4 md:px-8 bg-white">
         <div class="container mx-auto">
 
+            <img src="img/Beerpay.png" alt="logo_beerpay" class="mx-auto mb-6 w-80">
             <div class="text-center mb-16">
-                <h2 class="text-5xl font-extrabold text-amber-800 mb-4">BeerPay</h2>
                 <p class="text-2xl text-amber-600 font-semibold mb-6">A revolução digital das cervejas artesanais</p>
                 <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
                     Plataforma de pagamento, e-commerce e relacionamento criada sob medida para cervejarias artesanais.
@@ -720,22 +701,23 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-amber-900 text-white rounded-3xl p-8 md:p-12 mb-16">
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 border-b border-amber-700 pb-2 italic">Para Cervejarias</h3>
+                    <h3 class="text-2xl font-bold mb-6 border-b border-amber-700 pb-2 ">Para Cervejarias</h3>
                     <ul class="space-y-4 text-lg">
                         <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Mais vendas</li>
                         <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Menos custos</li>
-                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Transparência</li>
+                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Novos clientes</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 border-b border-amber-700 pb-2 italic">Para Consumidores</h3>
+                    <h3 class="text-2xl font-bold mb-6 border-b border-amber-700 pb-2 ">Para Consumidores</h3>
                     <ul class="space-y-4 text-lg">
-                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Experiência simples
+                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Acesso a novas cervejas
                         </li>
-                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Produtos exclusivos
+                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Experiência facilitada
                         </li>
-                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Relacionamento direto
+                        <li class="flex items-center"><span class="text-amber-400 mr-2">✔</span> Cervejas artesanais
+                            selecionadas
                         </li>
                     </ul>
                 </div>
@@ -757,7 +739,7 @@
             <h2 class="text-4xl font-bold text-center mb-16 text-amber-800">Nossa Equipe</h2>
 
             <div class="mb-20">
-                <h3 class="text-2xl font-semibold text-center mb-10 text-amber-700 uppercase tracking-widest">Fundadores
+
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-4xl mx-auto">
                     <custom-team-card image="team/pablo_oliveira.png" name="Pablo Oliveira" role="CEO"
@@ -773,11 +755,10 @@
             <hr class="border-amber-100 mb-20 max-w-5xl mx-auto">
 
             <div>
-                <h3 class="text-2xl font-semibold text-center mb-10 text-amber-700 uppercase tracking-widest">Conselho
-                    Consultivo</h3>
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <custom-team-card image="team/raoni_moreno.png" name="Raoni Moreno" role="CCO"
-                        description="Responsável Comunicação">
+                        description="Responsável Comunicação/Co-Fundador">
                     </custom-team-card>
 
                     <custom-team-card image="team/ana_magalhaes.png" name="Ana Magalhães" role="CHO"
@@ -785,111 +766,111 @@
                     </custom-team-card>
 
                     <custom-team-card image="team/daniel_mazoco.png" name="Daniel Mazoco" role="CSO"
-                        description="Comercial">
+                        description="Comercial/Co-Fundador">
                     </custom-team-card>
                 </div>
             </div>
         </div>
     </section>
-    <section  id="partners" class="py-20 px-4 md:px-8 bg-gray-50 overflow-hidden">
-        <div class="container mx-auto">
+    <section id="partners" class="py-20 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-4 md:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-amber-800 mb-2">Parceiros do Ecossistema</h2>
-                <p class="text-xl text-gray-600">Crescemos juntos</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-2">Parceiros do Ecossistema</h2>
+                <p class="text-lg md:text-xl text-gray-600">Crescemos juntos</p>
             </div>
 
-            <div class="flex flex-wrap justify-center gap-4 mb-16">
+            <div class="flex flex-wrap justify-center gap-3 mb-16">
                 <span
-                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">Cervejarias</span>
+                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-xs md:text-sm font-medium shadow-sm">Cervejarias</span>
                 <span
-                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">Tecnologia</span>
+                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-xs md:text-sm font-medium shadow-sm">Tecnologia</span>
                 <span
-                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">Financeiro</span>
+                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-xs md:text-sm font-medium shadow-sm">Financeiro</span>
                 <span
-                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-sm font-medium shadow-sm">Comunidade
+                    class="px-4 py-2 bg-white border border-amber-200 text-amber-800 rounded-full text-xs md:text-sm font-medium shadow-sm">Comunidade
                     & Eventos</span>
             </div>
+        </div>
 
-            <div class="relative w-full">
-                <div class="flex w-[200%] gap-12 animate-scroll items-center">
-                    <div class="flex justify-around w-1/2 gap-12">
-                        <div class="group relative">
-                            <img src="parceiros/itrois_pb_p.webp" alt="ITROIS"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Parceiro
-                                de Software</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/greenecobank_pb_p.webp" alt="Green Eco Bank"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Soluções
-                                Financeiras</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/fapes_pb_p3.webp" alt="FAPES"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
-                                à Inovação</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/Preta_100x43.webp" alt="fonte"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Infraestrutura</span>
-                        </div>
+        <div class="relative flex overflow-hidden group">
+            <div class="flex w-max animate-loop-scroll">
 
-                        <div class="group relative">
-                            <img src="parceiros/FINEPE_pb_p.webp" alt="fonte"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
-                                e Pesquisa</span>
-                        </div>
+                <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12">
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/logo.png" alt="ITROIS"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                        <span
+                            class="absolute -bottom-6 scale-0 group-hover/item:scale-100 bg-amber-800 text-white text-[10px] py-1 px-2 rounded transition whitespace-nowrap">Parceiro
+                            Software</span>
                     </div>
-                    <div class="flex justify-around w-1/2 gap-12">
-                        <div class="group relative">
-                            <img src="parceiros/itrois_pb_p.webp" alt="ITROIS"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Parceiro
-                                de Software</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/greenecobank_pb_p.webp" alt="Green Eco Bank"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Soluções
-                                Financeiras</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/fapes_pb_p3.webp" alt="FAPES"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
-                                à Inovação</span>
-                        </div>
-                        <div class="group relative">
-                            <img src="parceiros/Preta_100x43.webp" alt="fonte"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Infraestrutura</span>
-                        </div>
 
-                        <div class="group relative">
-                            <img src="parceiros/FINEPE_pb_p.webp" alt="fonte"
-                                class="h-12 grayscale group-hover:grayscale-0 transition duration-300">
-                            <span
-                                class="absolute -bottom-8 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 bg-amber-800 text-white text-xs py-1 px-2 rounded transition whitespace-nowrap">Fomento
-                                e Pesquisa</span>
-                        </div>
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/logo - site_Prancheta 1.png" alt="SEEDS"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                        <span
+                            class="absolute -bottom-6 scale-0 group-hover/item:scale-100 bg-amber-800 text-white text-[10px] py-1 px-2 rounded transition whitespace-nowrap">Inovação</span>
+                    </div>
+
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/fapes.png" alt="FAPES"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                        <span
+                            class="absolute -bottom-6 scale-0 group-hover/item:scale-100 bg-amber-800 text-white text-[10px] py-1 px-2 rounded transition whitespace-nowrap">Fomento</span>
+                    </div>
+
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/fonte_hub.png" alt="Fonte Hub"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                        <span
+                            class="absolute -bottom-6 scale-0 group-hover/item:scale-100 bg-amber-800 text-white text-[10px] py-1 px-2 rounded transition whitespace-nowrap">Infraestrutura</span>
                     </div>
                 </div>
+
+                <div class="flex items-center gap-16 md:gap-24 px-8 md:px-12">
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/logo.png" alt="ITROIS"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/logo - site_Prancheta 1.png" alt="SEEDS"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/fapes.png" alt="FAPES"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                    <div class="w-40 h-24 flex-shrink-0 flex items-center justify-center group/item relative">
+                        <img src="parceiros/fonte_hub.png" alt="Fonte Hub"
+                            class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <style>
+        @keyframes loop-scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .animate-loop-scroll {
+            /* 30s é uma velocidade elegante para logos. Diminua para ser mais rápido. */
+            animation: loop-scroll 30s linear infinite;
+        }
+
+        /* Pausa o carrossel quando o usuário passa o mouse */
+        .group:hover .animate-loop-scroll {
+            animation-play-state: paused;
+        }
+    </style>
+
 
     <section id="contact" class="py-20 px-4 md:px-8 bg-white">
         <div class="container mx-auto max-w-6xl">
@@ -899,28 +880,32 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <form class="space-y-6">
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+
+                    <input type="hidden" name="access_key" value="SUA-CHAVE-AQUI">
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Nome</label>
-                            <input type="text" placeholder="Seu nome"
+                            <input type="text" name="name" required placeholder="Seu nome"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail</label>
-                            <input type="email" placeholder="seu@email.com"
+                            <input type="email" name="email" required placeholder="seu@email.com"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
                         </div>
                     </div>
+
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Telefone</label>
-                            <input type="tel" placeholder="(00) 00000-0000"
+                            <input type="tel" name="phone" placeholder="(00) 00000-0000"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Assunto</label>
-                            <select
+                            <select name="subject"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition">
                                 <option>Quero ser parceiro</option>
                                 <option>Dúvidas sobre o BeerPay</option>
@@ -931,15 +916,15 @@
                     </div>
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
-                        <textarea rows="4" placeholder="Como podemos ajudar?"
+                        <textarea name="message" rows="4" required placeholder="Como podemos ajudar?"
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition"></textarea>
                     </div>
+
                     <button type="submit"
                         class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-4 rounded-lg shadow-lg transition duration-300">
                         Enviar mensagem
                     </button>
                 </form>
-
                 <div class="flex flex-col justify-center space-y-8 p-8 bg-amber-50 rounded-2xl">
                     <div>
                         <h4 class="text-xl font-bold text-amber-900 mb-4">Contato Direto</h4>
@@ -949,7 +934,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            contato@beerpay.com.br
+                            contato@coletivobeer.com.br
                         </p>
                     </div>
                     <div>
@@ -974,31 +959,14 @@
                     </div>
                     <div class="border-t border-amber-200 pt-6 text-amber-800 italic">
                         "Transformando a paixão por cerveja em escala digital."
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <style>
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
 
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        .animate-scroll {
-            animation: scroll 20s linear infinite;
-        }
-
-        .animate-scroll:hover {
-            animation-play-state: paused;
-        }
-    </style>
     <custom-footer></custom-footer>
 
     <script>
